@@ -1,57 +1,34 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team – P.R.I.M.O.</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Team — P.R.I.M.O.</title><link rel="stylesheet" href="style.css"></head>
 <body>
-  
 <header>
-  <h1>P.R.I.M.O.</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="features.html">Features</a>
-    <a href="advantages.html">Advantages</a>
-    <a href="disadvantages.html">Disadvantages</a>
-    <a href="uses.html">Uses</a>
+  <div class="header-inner container">
+    <div class="logo">P.R.I.M.O.</div>
+  </div>
+  <nav class="nav container" aria-label="Main navigation">
+    <a href="home.html">Home</a>
+    <a href="details.html">Details</a>
     <a href="team.html">Team</a>
-    <a href="thanks.html">Thanks</a>
   </nav>
 </header>
 
-  <section class="fade-in">
-    <h2>Innovation Team Members</h2>
+<main class="container">
+  <section style="padding-top:48px">
+    <h2 class="section-title">Innovation Team — Student Introductions</h2>
     <div class="team-grid">
-      <div class="card">
-        <h3>Ayush Kumar Navik</h3>
-        <p><strong>Team Leader</strong></p>
-        <p>Class IX – DAV Public School, NIT Campus, Adityapur</p>
-        <p>Age – 14</p>
-      </div>
-      <div class="card">
-        <h3>Harshit Singh</h3>
-        <p>Class IX – DAV Public School, NIT Campus, Adityapur</p>
-        <p>Age – 15</p>
-      </div>
-      <div class="card">
-        <h3>Sumit Samanta</h3>
-        <p>Class IX – DAV Public School, NIT Campus, Adityapur</p>
-        <p>Age – 15</p>
-      </div>
-      <div class="card">
-        <h3>Pranav Kumar Mahato</h3>
-        <p>Class IX – DAV Public School, NIT Campus, Adityapur</p>
-        <p>Age – 14</p>
-      </div>
+      <div class="member fade-in card"><div class="avatar">A</div><div><strong>AYUSH KUMAR NAVIK</strong><div class="muted">Team Leader • Class IX • DAV Public School, NIT Campus, Adityapur • Age 14</div></div></div>
+      <div class="member fade-in card"><div class="avatar">H</div><div><strong>Harshit Singh</strong><div class="muted">Class IX • DAV Public School, NIT Campus, Adityapur • Age 15</div></div></div>
+      <div class="member fade-in card"><div class="avatar">S</div><div><strong>Sumit Samanta</strong><div class="muted">Class IX • DAV Public School, NIT Campus, Adityapur • Age 15</div></div></div>
+      <div class="member fade-in card"><div class="avatar">P</div><div><strong>Pranav Kumar Mahato</strong><div class="muted">Class IX • DAV Public School, NIT Campus, Adityapur • Age 14</div></div></div>
     </div>
+    <p style="margin-top:14px;color:var(--muted)">Each member contributed to design, coding, construction and documentation of P.R.I.M.O.</p>
   </section>
-  
-<footer>
-  <p>© 2025 P.R.I.M.O. Team | DAV Public School, Adityapur</p>
-</footer>
+</main>
 
+<footer><div class="container">© 2025 P.R.I.M.O. Team | DAV Public School, Adityapur</div></footer>
+<script>document.addEventListener('DOMContentLoaded', ()=>{document.querySelectorAll('.fade-in').forEach((el,i)=> setTimeout(()=> el.classList.add('show'), 120 + i*80));});</script>
+<script src="particles.js"></script>
 </body>
 </html>
